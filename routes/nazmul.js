@@ -1,12 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const axios = require("axios");
-/*{
-    "appId": "APP_118838",
-   "password": "cab1c32cdbe7b1489ec6048e33296a43",
-   "mobile": "8801629864228"
-}
-*/
+
 router.post("/subscription/otp/request", async (req, res) => {
     const { appId, password, mobile } = req.body;
     try {
